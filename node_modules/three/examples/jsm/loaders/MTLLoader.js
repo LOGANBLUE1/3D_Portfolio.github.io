@@ -9,7 +9,7 @@ import {
 	RepeatWrapping,
 	TextureLoader,
 	Vector2,
-	SRGBColorSpace
+	sRGBEncoding
 } from 'three';
 
 /**
@@ -361,7 +361,7 @@ class MaterialCreator {
 
 			if ( mapType === 'map' || mapType === 'emissiveMap' ) {
 
-				map.colorSpace = SRGBColorSpace;
+				map.encoding = sRGBEncoding;
 
 			}
 
